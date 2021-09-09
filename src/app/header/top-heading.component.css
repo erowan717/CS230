@@ -1,0 +1,32 @@
+.nav-icons{
+line-height: 125px;
+background-color: #8eaec2;
+text-shadow: 0 0 3px #000;
+}
+
+.col-sm{
+    background-color: white;
+    column-width: 300px;
+    
+}
+.row{
+    column-gap: 1px;
+}
+
+.col-md-1{
+    background-color: #8eaec2;
+}
+.nav-contribute{
+    background-color: white;
+}
+.input-group{
+    background-color: black;
+}
+.btn1{
+    color: black;
+    background-color:#dedede;
+}
+.btn2{
+    color: black;
+    background-color:#dedede;
+}
