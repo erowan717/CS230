@@ -1,7 +1,7 @@
 .nav-icons{
 line-height: 125px;
 background-color: #8eaec2;
-text-shadow: 0 0 3px #000;
+
 }
 
 .col-sm{
@@ -29,4 +29,5 @@ text-shadow: 0 0 3px #000;
 .btn2{
     color: black;
     background-color:#dedede;
+
 }

@@ -6,5 +6,5 @@ import { Component } from "@angular/core";
     styleUrls: ['./top-heading.component.css']
 })
 export class TopHeadingComponent{
-
+    logo: string = "/assets/lp-logo.svg"
 }
