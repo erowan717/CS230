@@ -1,33 +1,46 @@
 .nav-icons{
-line-height: 125px;
-background-color: #8eaec2;
-
-}
-
-.col-sm{
-    background-color: white;
-    column-width: 300px;
-    
-}
-.row{
-    column-gap: 1px;
-}
-
-.col-md-1{
+    line-height: 125px;
     background-color: #8eaec2;
+    
+    }
+    
+    .col-sm{
+        background-color: white;
+        column-width: 300px;
+        
+    }
+    .row{
+        column-gap: 1px;
+    }
+    
+    .col-md-1{
+        background-color: #8eaec2;
+    }
+    .nav-contribute{
+        background-color: white;
+    }
+    .input-group{
+        background-color: black;
+    }
+    .btn1{
+        color: black;
+        background-color:#dedede;
+    }
+    .btn2{
+        color: black;
+        background-color:#dedede;
+    
+    }
+.welcome{
+    text-align: center; 
+    color: white; 
+    font-family:roboto; 
+    font-weight: 300; 
+    font-size: 35.2px;
 }
-.nav-contribute{
-    background-color: white;
+.logo{
+    text-align: center; color:white; font-family:'Times New Roman', Times, serif; font-size: 80px;
 }
-.input-group{
-    background-color: black;
-}
-.btn1{
-    color: black;
-    background-color:#dedede;
-}
-.btn2{
-    color: black;
-    background-color:#dedede;
-
+.esport{
+    text-align: center; color:white; font-family:'roboto'; font-size: 22.4px; font-weight: 400;
 }
