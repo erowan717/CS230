@@ -1,10 +1,13 @@
 .container{
-    text-align: center; height: 200px; background-color: lightpink;
+    text-align: center; height: 200px; background-color: lightpink; color: white;
     
 }
 .col{
-    background-color: lightblue; height: 600px; text-align: center;
+    background-color: #072644; height: 600px; text-align: center; color: white;
 }
 .col-6{
     text-align: center; height: 600px; background-color: lightcoral;
+}
+.news{
+    background-color: lightgray; text-align: left;height: 1000px; padding-right: 0px; color: black;
 }

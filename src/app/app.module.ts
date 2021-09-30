@@ -13,6 +13,7 @@ import { MasterLeagueComponent } from './webpages/Master-League.component';
 import { TLnetComponent } from './webpages/TLnet.component';
 import { AppRoutingModule } from './app-routing.module';
 import { RoutingLayoutComponent } from './layout/routing-layout.component';
+import { GameCardComponent } from './mid/game-card.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { RoutingLayoutComponent } from './layout/routing-layout.component';
     LiquidLegendsComponent,
     MasterLeagueComponent,
     TLnetComponent,
-    RoutingLayoutComponent
+    RoutingLayoutComponent,
+    GameCardComponent
   ],
   imports: [
     BrowserModule,

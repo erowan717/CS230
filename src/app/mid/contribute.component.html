@@ -1,4 +1,10 @@
-
+<div class="container-fluid">
+  <div class="row row-cols-3">
+    <div *ngFor="let game of games;">
+  <spotify-game-card title = "{{game.title}}" list="{{game.list}}" background="{{game.background}}"></spotify-game-card>
+</div>
+</div>
+</div>
 <div class="nav-contribute">
     <body style = "background-color: #072644;">
       <h1 style="text-align: center; color:white; font-family:roboto; font-weight: 300; font-size: 35.84px; ">How to Contribute</h1>
