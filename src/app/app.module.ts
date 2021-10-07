@@ -14,6 +14,8 @@ import { TLnetComponent } from './webpages/TLnet.component';
 import { AppRoutingModule } from './app-routing.module';
 import { RoutingLayoutComponent } from './layout/routing-layout.component';
 import { GameCardComponent } from './mid/game-card.component';
+import { HttpClientModule } from '@angular/common/http';
+import { UserInfoComponent } from './header/user-info.component';
 
 @NgModule({
   declarations: [
@@ -28,11 +30,13 @@ import { GameCardComponent } from './mid/game-card.component';
     MasterLeagueComponent,
     TLnetComponent,
     RoutingLayoutComponent,
-    GameCardComponent
+    GameCardComponent,
+    UserInfoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
