@@ -1,13 +1,14 @@
-import { Component } from "@angular/core";
-import { Game } from "./game.model";
-import { mock_games } from "./mock-games";
+import { Component} from "@angular/core";
+import { OnInit } from "@angular/core";
+import { CardInfo } from "./card-info.model";
+import { CardService } from "./card.service";
 
 @Component({
     selector: 'app-contribute',
     templateUrl: 'contribute.component.html',
     styleUrls: ['./contribute.component.css']
 })
-export class ContributeComponent{
+export class ContributeComponent implements OnInit{
     col_1_par_1: string = "Contributing to the wiki is actually pretty easy and keep in mind that every more-correct-than-wrong contribution is valuable no matter how small."
     col_1_par_2: string = "When you visit Liquipedia, consider adding to it or correcting something, it doesn't have to take up much of your time and effort and it will help other visitors like yourself and Liquipedia as a whole. "
     col_1_par_3: string = "Many people start by fixing typos, which is actually the easiest way to contribute. You just have to create an account—if you don't have one already—log in, click edit, find and fix the typo, click save, and you are done. "
@@ -18,11 +19,18 @@ export class ContributeComponent{
     col_2_par_1_2: string = "link on any wiki page, just remember to follow the instructions and complete the registration. Once you have an account go click on the log in box in the top right and enter your details or if logged in on any of the three sites mentioned just click on the TL quick log in link."
     col_2_par_2: string = "There are two types of edit links. One is a tab at the top of the page which lets you edit all sections of the page at once. The second is on the far right side of all sub-headers, this allows you to edit the specific section you are on. When editing a page you will have some tools in a toolbar above the editing box to help you with the markup language that the wiki uses for things like bold text, italics, headers, and links. To know more about the wiki markup language visit "
     col_2_par_3: string = "There are multiple things one can do to help out with on the wikis. Besides fixing typos or entering results you can:"
-    games: Game[]=[];
+    CardInfo: CardInfo | undefined;
 
-    constructor () {
-        for (var game of mock_games) {
-            this.games.push(new Game(game));
+    constructor (private cardService: CardService) {
+        }
+        ngOnInit(): void{
+            console.log("Registering");
+            this.showCardInfo();
+        }
+        showCardInfo(){
+            this.cardService.getCardInfo().subscribe((data: CardInfo)=> {
+                console.log(data);
+                this.CardInfo = data;
+            })
         }
     }
-}

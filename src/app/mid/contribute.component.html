@@ -1,7 +1,7 @@
 <div class="container-fluid">
   <div class="row row-cols-3">
-    <div *ngFor="let game of games;">
-  <spotify-game-card title = "{{game.title}}" list="{{game.list}}" background="{{game.background}}"></spotify-game-card>
+    <div *ngFor="let CardInfo;">
+  <spotify-game-card title = "{{CardInfo.title}}" list="{{CardInfo.list}}" background="{{CardInfo.background}}"></spotify-game-card>
 </div>
 </div>
 </div>
