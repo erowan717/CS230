@@ -7,9 +7,10 @@ export class UserInfoService{
     private baseUrl:string = 'https://liquipedia-app-default-rtdb.firebaseio.com/'
     private myInfoEndpoint:string = 'my-info.json'
     constructor(private http: HttpClient){
-        
+
     }
     getUserInfo() {
+        console.log(this.baseUrl + this.myInfoEndpoint)
         return this.http.get<UserInfo>(this.baseUrl + this.myInfoEndpoint);
 }
 }

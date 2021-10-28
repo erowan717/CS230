@@ -1,0 +1,37 @@
+<form #postForm = "ngForm" (ngSubmit) = "onUpdateSurveyInfo(postForm.value)">
+    <div class="mb-3">
+       <label for="formGroupExampleInput" class="form-label">Email Adress</label>
+       <input type="text" class="form-control" id="formGroupExampleInput" ngModel name = "Email"placeholder="Your Answer">
+     </div>
+     <div class="mb-3">
+       <label for="formGroupExampleInput2" class="form-label">Twitter</label>
+       <input type="text" class="form-control" id="formGroupExampleInput2" ngModel name="Twitter" placeholder="Your Answer">
+     </div>
+     <div class="mb-3">
+       <label for="formGroupExampleInput3" class="form-label">Discord</label>
+       <input type="text" class="form-control" id="formGroupExampleInput3" ngModel name = "Discord" placeholder="Your Answer">
+     </div>
+     <div class="mb-3">
+       <label for="formGroupExampleInput4" class="form-label">TL.net ID</label>
+       <input type="text" class="form-control" id="formGroupExampleInput4" ngModel name= "TLnet_ID" placeholder="Your Answer">
+     </div>
+     <div class="mb-3">
+       What Wiki would you like to help create?
+     </div>
+     <div class="btn-group">
+       <button class="btn btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+         Other
+       </button>
+       <ul class="dropdown-menu">
+           <li><a class="dropdown-item" href="#">Smite</a></li>
+           <li><a class="dropdown-item" href="#">Gears of War</a></li>
+           <li><a class="dropdown-item" href="#">Splatoon</a></li>
+           <li><a class="dropdown-item" href="#">Halo</a></li>
+         </ul>
+     </div>
+     <div>
+     <button class="btn btn-dark" type="submit">
+       Button
+    </button>
+    </div>
+    </form>

@@ -16,6 +16,10 @@ import { RoutingLayoutComponent } from './layout/routing-layout.component';
 import { GameCardComponent } from './mid/game-card.component';
 import { HttpClientModule } from '@angular/common/http';
 import { UserInfoComponent } from './header/user-info.component';
+import { FormsModule } from '@angular/forms';
+import { WikiFormComponent } from './webpages/wiki-form.component';
+import { SurveyInfoComponent } from './webpages/survey.info.component';
+import { EditSurveyInfoComponent } from './webpages/edit-survey-info.component';
 
 @NgModule({
   declarations: [
@@ -31,12 +35,16 @@ import { UserInfoComponent } from './header/user-info.component';
     TLnetComponent,
     RoutingLayoutComponent,
     GameCardComponent,
-    UserInfoComponent
+    UserInfoComponent,
+    WikiFormComponent,
+    SurveyInfoComponent,
+    EditSurveyInfoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule 
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

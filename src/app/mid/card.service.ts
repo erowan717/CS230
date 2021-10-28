@@ -10,6 +10,6 @@ export class CardService{
 
     }
     getCardInfo() {
-        return this.http.get<CardInfo>(this.baseUrl + this.myInfoEndpoint);
+        return this.http.get<CardInfo[]>(this.baseUrl + this.myInfoEndpoint);
 }
 }

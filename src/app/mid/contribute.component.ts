@@ -19,7 +19,7 @@ export class ContributeComponent implements OnInit{
     col_2_par_1_2: string = "link on any wiki page, just remember to follow the instructions and complete the registration. Once you have an account go click on the log in box in the top right and enter your details or if logged in on any of the three sites mentioned just click on the TL quick log in link."
     col_2_par_2: string = "There are two types of edit links. One is a tab at the top of the page which lets you edit all sections of the page at once. The second is on the far right side of all sub-headers, this allows you to edit the specific section you are on. When editing a page you will have some tools in a toolbar above the editing box to help you with the markup language that the wiki uses for things like bold text, italics, headers, and links. To know more about the wiki markup language visit "
     col_2_par_3: string = "There are multiple things one can do to help out with on the wikis. Besides fixing typos or entering results you can:"
-    CardInfo: CardInfo | undefined;
+    cardsInfo: CardInfo[] | undefined;
 
     constructor (private cardService: CardService) {
         }
@@ -28,9 +28,9 @@ export class ContributeComponent implements OnInit{
             this.showCardInfo();
         }
         showCardInfo(){
-            this.cardService.getCardInfo().subscribe((data: CardInfo)=> {
+            this.cardService.getCardInfo().subscribe((data: CardInfo[])=> {
                 console.log(data);
-                this.CardInfo = data;
+                this.cardsInfo = data;
             })
         }
     }

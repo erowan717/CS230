@@ -6,6 +6,7 @@ import { LiquidLegendsComponent } from './webpages/LiquidLegends.component';
 import { MasterLeagueComponent } from './webpages/Master-League.component';
 import { QihlComponent } from './webpages/qihl.component';
 import { TLnetComponent } from './webpages/TLnet.component';
+import { WikiFormComponent } from './webpages/wiki-form.component';
 
 const routes: Routes = [
   { path: 'LiquidDota', component: LiquidDotaComponent },
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'qihl', component: QihlComponent},
   { path: 'home', component: OverallLayoutComponent},
   { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: 'wifi-form', component: WikiFormComponent}
 
 ];
 
