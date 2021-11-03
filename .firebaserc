@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "liquipedia-app": {
+      "hosting": {
+        "spotify": [
+          "liquipedia-app"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "liquipedia-app"
+  }
+}

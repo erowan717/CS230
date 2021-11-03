@@ -20,6 +20,9 @@ import { FormsModule } from '@angular/forms';
 import { WikiFormComponent } from './webpages/wiki-form.component';
 import { SurveyInfoComponent } from './webpages/survey.info.component';
 import { EditSurveyInfoComponent } from './webpages/edit-survey-info.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideDatabase,getDatabase } from '@angular/fire/database';
 
 @NgModule({
   declarations: [
@@ -44,7 +47,9 @@ import { EditSurveyInfoComponent } from './webpages/edit-survey-info.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideDatabase(() => getDatabase())
   ],
   providers: [],
   bootstrap: [AppComponent]
