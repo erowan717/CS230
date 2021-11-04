@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { DatabaseService } from "./database.service";
 import { SurveyInfo } from "./survey-info.model";
 import { SurveyInfoService } from "./survey-info.service";
 
@@ -9,8 +10,8 @@ import { SurveyInfoService } from "./survey-info.service";
 
 export class EditSurveyInfoComponent {
 
-    constructor(private infoService: SurveyInfoService) {
-
+    constructor(private infoService: SurveyInfoService, private dbService: DatabaseService) {
+        dbService.showData();
     }
 
     onUpdateSurveyInfo(data: SurveyInfo){
