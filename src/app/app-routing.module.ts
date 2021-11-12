@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AuthComponent } from './auth/auth.component';
 import { OverallLayoutComponent } from './layout/overall-layout.component';
 import { LiquidDotaComponent } from './webpages/LiquidDota.component';
 import { LiquidLegendsComponent } from './webpages/LiquidLegends.component';
@@ -16,7 +17,8 @@ const routes: Routes = [
   { path: 'qihl', component: QihlComponent},
   { path: 'home', component: OverallLayoutComponent},
   { path: '', redirectTo: '/home', pathMatch: 'full' },
-  { path: 'wifi-form', component: WikiFormComponent}
+  { path: 'wifi-form', component: WikiFormComponent},
+  { path: 'auth', component: AuthComponent},
 
 ];
 
